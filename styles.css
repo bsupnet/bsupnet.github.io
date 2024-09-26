@@ -1,0 +1,79 @@
+body {
+    background-color: #fbeaff;
+    color: #845ec2; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 20pt; 
+}
+
+p { 
+    margin: 12pt; 
+}
+
+h1 {
+    font-size: 36pt; 
+    margin: 15pt;
+    color: #00c9a7; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family for h1 */
+}
+
+h2 {
+    font-size: 28pt;
+    margin: 15pt; 
+    color: #4d8076; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h3 {
+    font-size: 20pt; 
+    margin: 15pt; 
+    color: #348490; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif /* Font family for h3 */
+}
+
+h4 {
+    font-size: 16pt; 
+    margin: 15pt; 
+    color: #689cb6; 
+}
+a {
+   color: #9db5d4;
+   text-decoration: none;
+}
+a:hover {
+    color: #cfceeb;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #4e4351;
+    text-decoration: solid;
+}
+
+table {
+    width: 50%; 
+    margin: 0; 
+    border-collapse: collapse; 
+}
+
+th, td {
+    border: 1px solid #507aa6;
+    padding: 15px; 
+    text-align: center;
+}
+
+th {
+    color: #b4a7b7;
+}
+
+.cell-link {
+    color: #9db5d4;
+    text-decoration: none;
+}
+.cell-link:hover {
+    color: #cfceeb;
+    text-decoration: underline;
+}
+.cell-link:active {
+    color: #4e4351;
+    text-decoration: solid;
+}
