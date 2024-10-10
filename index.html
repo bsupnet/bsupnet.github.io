@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balong Supnet</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+                <a href="index.html">Home</a>
+            </li>
+            <li onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+                <a href="https://www.youtube.com/watch?v=NsMKvVdEPkw" alt="Meow">Cat</a>
+            </li>
+            <li onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+                <a href="#">More</a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/bsupnet/bsupnet.github.io">Projects</a></li>
+                    <li><a href="mailto:bsupnet@torontomu.ca">Contact</a></li>
+                    <li><a href="https://www.youtube.com/@ZapCubRBLX">My Content</a></li>
+                </ul>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Balong Supnet</h1>
+        <h2>Business Technology Management Student</h2>
+    </div>
+    <hr>
+    <a href="https://www.torontomu.ca/" target="_blank">
+        <img src="public_html/images/my_photo.JPG" alt="That's me!" style="width: 200px; height: 200px;">
+    </a>
+
+    <p>My fashionable picture goes to the TMU Website!</p>
+    <button onclick="askName()">To whom do I owe the pleasure?</button>
+    <!-- chat is that rizz-->
+    <p id="nameDisplay" style="font-weight: bold; margin-top: 20px;"></p>
+    
+    <script> 
+        function askName() {
+            const userName = prompt("What's your name?:");
+            if (userName) {
+                document.getElementById("nameDisplay").textContent = "That's a cool one, " + userName
+            } else {
+                document.getElementById("nameDisplay").textContent = "It's okay sharing names is awkward. Maybe later?";
+            }
+        }
+    </script>
+    <h2>Education</h2>
+    <ol> 
+        <li>
+            <a href="https://www.tcdsb.org/o/maryward" target="_blank">
+                Mary Ward Catholic Secondary School
+            </a>
+            <ul>
+                <li>Certificate of Concentration</li>
+                <li>Gold Sash Recipient</li>
+                <li>French Proficiency</li>
+            </ul>
+        </li>
+        <li>
+            <a href='https://www.torontomu.ca/' target='_blank'>
+                Toronto Metropolitan University
+            </a>
+            <ul>
+                <li>GMS200 Simulation Winner</li>
+                <li>Azure Fundamentals</li>
+                <li>First Aid and CPR Class C</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>What is Business Technology Management?</h3>
+    <p>Business Technology Management (BTM) is about understanding both technology and how to lead a team in an efficient manner.</p>
+
+    <h3>My Favourite Course</h3>
+    <p>My most memorable course is LAW122, as it helped me understand the concept of law better and the importance of government and voting.</p>
+
+    <h2>Notable Achievements</h2>
+    <h3>Ted Rogers Financial Planning Advisory</h3>
+    <h4>General Associate</h4>
+    <ul>
+        <li>Led volunteer events, demonstrating leadership and organizational skills.</li>
+        <li>Coordinated logistics for events.</li>
+    </ul>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cell-content">
+                    <a class="cell-link" href="https://www.torontomu.ca/" target="_blank">torontomu.ca</a>
+                </div>
+            </td>
+            <td>
+                <div class="cell-content">TMU's homepage</div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cell-content">
+                    <a class="cell-link" href="https://www.youtube.com/" target="_blank">youtube.com</a>
+                </div>
+            </td>
+            <td>
+                <div class="cell-content">YouTube, my favourite place for cat videos!</div>
+            </td>
+        </tr>
+    </table>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+    <script>
+        function showMenu(item) {
+            const submenu = item.querySelector(".submenu");
+            if (submenu) submenu.style.display = "block";
+        }
+        function hideMenu(item) {
+            const submenu = item.querySelector(".submenu");
+            if(submenu) submenu.style.display = "none";
+        }
+    </script>
+</body>
+</html>
