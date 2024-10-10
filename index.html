@@ -29,6 +29,16 @@
         <h2>Business Technology Management Student</h2>
     </div>
     <hr>
+    <script>
+        function showMenu(item) {
+            const submenu = item.querySelector(".submenu");
+            if (submenu) submenu.style.display = "block";
+        }
+        function hideMenu(item) {
+            const submenu = item.querySelector(".submenu");
+            if(submenu) submenu.style.display = "none";
+        }
+    </script>
     <a href="https://www.torontomu.ca/" target="_blank">
         <img src="public_html/images/my_photo.JPG" alt="That's me!" style="width: 200px; height: 200px;">
     </a>
@@ -118,15 +128,5 @@
                 alt="Valid CSS!" />
         </a>
     </p>
-    <script>
-        function showMenu(item) {
-            const submenu = item.querySelector(".submenu");
-            if (submenu) submenu.style.display = "block";
-        }
-        function hideMenu(item) {
-            const submenu = item.querySelector(".submenu");
-            if(submenu) submenu.style.display = "none";
-        }
-    </script>
 </body>
 </html>
